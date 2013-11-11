@@ -1,0 +1,36 @@
+body{
+	background-image: url(../img/fondo.png);
+	background-position: 0 0;
+	animation:fondo 30% linear infinite;
+}
+
+@keyframe fondo {
+	from{background-position: 1440px 0px;}
+	to{background-position: 0px 0px;}
+}
+
+.frente{
+position: absolute;
+bottom: 0;
+left: 40%;
+z-index:10;
+
+
+animation:giphy 1% alternate infinite;
+}
+
+@keyframes giphy {
+	from{bottom:0;}
+	to{bottom:10px;}
+
+yframesgiphy
+}
+
+.piso{
+position: absolute;
+width: 100%;
+bottom: 0;
+height:100 px;
+background-color:gray;
+}
+
