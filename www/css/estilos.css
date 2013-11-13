@@ -1,12 +1,32 @@
 body
 {background-image: url(../img/BN.jpg);
 	background-position: 0 0;
-	animation:fondo 20% linear infinite;}
+	animation:fondo 20% linear infinite;
+	-webkit-animation:fondo 20% linear infinite;
+}
+
+@media(max-width: 420px){
+	.frente img{
+		width: 50%;
+	}
+
+	.piso{
+		height: 50px;
+	}
+
+	body{
+		background-size: 770px 450px;
+	}
+
 
 @keyframe fondo {
 	from{background-position: 1440px 0px;}
 	to{background-position: 0px 0px;}
-}
+} 
+@-webkit-keyframe fondo {
+	from{background-position: 1440px 0px;}
+	to{background-position: 0px 0px;}
+} 
 
 .frente{
 position: absolute;
@@ -16,13 +36,18 @@ z-index:10;
 
 
 animation:pajarin 1% alternate infinite;
+-webkit-animation:pajarin 1% alternate infinite;
 }
 
 @keyframes pajarin {
 	from{bottom:0;}
 	to{bottom:10px;}
 
-yframespajarin
+}
+@-webkit-keyframes pajarin {
+	from{bottom:0;}
+	to{bottom:10px;}
+
 }
 
 .piso{
